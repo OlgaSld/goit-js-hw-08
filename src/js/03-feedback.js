@@ -19,7 +19,7 @@ getFormInformation()
 
 function handlerInput(evt) {
     data[evt.target.name] = evt.target.value;
-    localStorage.setItem(LS_KEY, JSON.stringify({ data }));
+    localStorage.setItem(LS_KEY, JSON.stringify(data));
     
 console.log(data);
 }
